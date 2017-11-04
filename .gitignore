@@ -1,7 +1,11 @@
+# This file is updated automatically
+# You can add rules in the configuration file
+
 .git/
 build/
 node_modules/
 .DS_Store
+.enable-dev-mode
 .eslintrc
 .gitignore
 .npmignore

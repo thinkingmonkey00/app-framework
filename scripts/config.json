@@ -1,0 +1,30 @@
+{
+  "gitignore": [
+    ".git/",
+    "build/",
+    "node_modules/",
+    ".DS_Store",
+    ".enable-dev-mode",
+    ".eslintrc",
+    ".gitignore",
+    ".npmignore",
+    ".npmrc",
+    "*.log*",
+    "!eslint.log",
+    "package-lock.json"
+  ],
+  "npmignore": [
+    ".git/",
+    "build/",
+    "node_modules/",
+    ".DS_Store",
+    ".enable-dev-mode",
+    ".eslintrc",
+    ".gitignore",
+    ".npmignore",
+    ".npmrc",
+    "*.log*",
+    "!eslint.log",
+    "package-lock.json"
+  ]
+}

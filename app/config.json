@@ -1,0 +1,46 @@
+{
+  "firebase": {
+    "authentication": {
+      "emailRegistration": false,
+      "emailLogin": false,
+      "googleLogin": false,
+      "facebookLogin": false,
+      "githubLogin": false,
+      "phoneLogin": false
+    },
+    "database": true,
+    "storage": false,
+    "hosting": false,
+    "development": {
+      "apiKey": "AIzaSyBo2TNakJKYSAyakI35WY1KN1Goejoov7s",
+      "authDomain": "family-app-95cbb.firebaseapp.com",
+      "databaseURL": "https://family-app-95cbb.firebaseio.com",
+      "projectId": "family-app-95cbb",
+      "storageBucket": "family-app-95cbb.appspot.com",
+      "messagingSenderId": "632768359234"
+    },
+    "production": {
+      "apiKey": "",
+      "authDomain": "",
+      "databaseURL": "",
+      "projectId": "",
+      "storageBucket": "",
+      "messagingSenderId": ""
+    }
+  },
+  "eslint": {
+    "extends": "airbnb",
+    "rules": {
+      "semi": [
+        "error",
+        "never"
+      ]
+    }
+  },
+  "gitignore": [],
+  "npmignore": [],
+  "npmrc": {
+    "loglevel": "silent"
+  },
+  "debug": true
+}

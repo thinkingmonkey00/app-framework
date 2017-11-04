@@ -1,0 +1,115 @@
+{
+  "firebase": {
+    "props": {
+      "authentication": {
+        "props": {
+          "emailRegistration": {
+            "type": "boolean",
+            "default": false
+          },
+          "emailLogin": {
+            "type": "boolean",
+            "default": false
+          },
+          "googleLogin": {
+            "type": "boolean",
+            "default": false
+          },
+          "facebookLogin": {
+            "type": "boolean",
+            "default": false
+          },
+          "githubLogin": {
+            "type": "boolean",
+            "default": false
+          },
+          "phoneLogin": {
+            "type": "boolean",
+            "default": false
+          }
+        }
+      },
+      "database": {
+        "type": "boolean",
+        "default": false
+      },
+      "storage": {
+        "type": "boolean",
+        "default": false
+      },
+      "hosting": {
+        "type": "boolean",
+        "default": false
+      },
+      "development": {
+        "props": {
+          "apiKey": {
+            "type": "string"
+          },
+          "authDomain": {
+            "type": "string"
+          },
+          "databaseURL": {
+            "type": "string"
+          },
+          "projectId": {
+            "type": "string"
+          },
+          "storageBucket": {
+            "type": "string"
+          },
+          "messagingSenderId": {
+            "type": "string"
+          }
+        }
+      },
+      "production": {
+        "props": {
+          "apiKey": {
+            "type": "string"
+          },
+          "authDomain": {
+            "type": "string"
+          },
+          "databaseURL": {
+            "type": "string"
+          },
+          "projectId": {
+            "type": "string"
+          },
+          "storageBucket": {
+            "type": "string"
+          },
+          "messagingSenderId": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "eslint": {
+    "type": "object",
+    "default": {
+      "extends": "airbnb",
+      "rules": {
+        "semi": ["error", "never"]
+      }
+    }
+  },
+  "gitignore": {
+    "type": "array"
+  },
+  "npmignore": {
+    "type": "array"
+  },
+  "npmrc": {
+    "type": "object",
+    "default": {
+      "loglevel": "silent"
+    }
+  },
+  "debug": {
+    "type": "boolean",
+    "default": false
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "gitignore": {
+    "type": "array"
+  },
+  "npmignore": {
+    "type": "array"
+  }
+}
