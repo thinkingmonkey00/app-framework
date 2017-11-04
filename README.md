@@ -8,11 +8,13 @@
 
 ## Version 2 under development
 
-Completely rewritten with new best practice - to support what's coming next - Framework7 2 / Framework7-Vue 2!
+> Completely rewritten with new best practice - to support what's coming next - Framework7 2!
 
-> :warning: Please switch to the [master tree](https://github.com/scriptPilot/app-framework/tree/master) for productive usage!
+> :warning: &nbsp; Please switch to the [master tree](https://github.com/scriptPilot/app-framework/tree/master) for productive usage!
 
 ---
+
+<br />
 
 ### Quick start for developers
 
