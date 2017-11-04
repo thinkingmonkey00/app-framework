@@ -6,7 +6,7 @@
 
 ---
 
-## VERSION 2 UNDER DEVELOPMENT
+## Version 2 under development
 
 > :warning: Please switch to the [master tree](https://github.com/scriptPilot/app-framework/tree/master) for productive usage!
 
