@@ -7,3 +7,13 @@
 ## VERSION 2 UNDER DEVELOPMENT
 
 Please switch to the master tree for productive usage!
+
+---
+
+### Quick start for developers
+
+1. `git clone https://github.com/scriptPilot/app-framework.git --branch v2` to clone the repo 
+2. `cd app-framework` to open the folder
+3. `npm install` to install all dependencies
+4. `npm run update` to create all configuration files
+5. `npm run dev` to start the development server
