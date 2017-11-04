@@ -17,7 +17,6 @@
       <f7-list-item title="Framework7-Vue Components" link="/f7vue/">
         <div slot="media"><img src="images/f7vue/f7-icon.png" /></div>
       </f7-list-item>
-      <f7-list-item title="Color" link="/f7vue/color-themes/"></f7-list-item>
     </f7-list>
 
   </f7-page>
