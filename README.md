@@ -4,6 +4,8 @@
 
 ![](media/process.png)
 
+<br />
+
 ---
 
 ## Version 2 under development
@@ -14,6 +16,7 @@
 
 ---
 
+<br />
 <br />
 
 ### Quick start for developers
