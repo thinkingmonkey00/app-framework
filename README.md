@@ -21,8 +21,8 @@
 
 ### Quick start for developers
 
-1. `git clone https://github.com/scriptPilot/app-framework.git --branch v2` to clone the repo 
-2. `cd app-framework` to open the folder
-3. `npm install` to install all dependencies
-4. `npm run update` to create all configuration files
-5. `npm run dev` to start the development server
+1. Run `git clone https://github.com/scriptPilot/app-framework.git --branch v2` to clone the repo 
+2. Run `cd app-framework` to open the folder
+3. Run `npm install` to install all dependencies
+4. Run `npm run update` to create all configuration files
+5. Run `npm run dev` to start the development server
