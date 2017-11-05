@@ -1,4 +1,14 @@
 {
+  "appId": {
+    "regexp": "/^[a-z][a-z0-9_]*(\\.[a-z0-9_]+)+[0-9a-z_]$/i",
+    "default": "tld.yourdomain.yourapp"
+  },
+  "appName": {
+    "type": "string"
+  },
+  "appShortName": {
+    "type": "string"
+  },
   "firebase": {
     "props": {
       "authentication": {

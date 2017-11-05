@@ -1,4 +1,7 @@
 {
+  "appId": "tld.yourdomain.yourapp",
+  "appName": "App Framework",
+  "appShortName": "App",
   "firebase": {
     "authentication": {
       "emailRegistration": false,

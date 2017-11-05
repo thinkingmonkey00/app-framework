@@ -38,19 +38,77 @@ const getCurrentConfig = () => new Promise((resolve, reject) => {
   })
 })
 
-// Step: Complete configuration with basic data
-const addBasicData = currentConfig => new Promise((resolve) => {
-  env.log.debug('should not log')
-  const oldConfig = currentConfig
-  return resolve(oldConfig)
+// Step: Update Cordova config and save to config.xml file
+const updateConfig = () => new Promise((resolve, reject) => {
+  const newConfig = {}
+  // Add xml root element "widget" with app id and package
+  newConfig.widget = {
+    $: {
+      id: env.cfg.app.appId,
+      version: env.cfg.pkg.version,
+      xmlns: 'http://www.w3.org/ns/widgets',
+      'xmlns:cdv': 'http://cordova.apache.org/ns/1.0',
+    },
+  }
+  // Add name
+  newConfig.widget.name = [{ _: env.cfg.app.appName }]
+  // Add short name
+  if (env.cfg.app.appShortName !== '') {
+    newConfig.widget.name.push({
+      $: {
+        short: 'HiCdv',
+      },
+      _: env.cfg.app.appShortName,
+    })
+  }
+  // Add description
+  if (env.cfg.pkg.description) newConfig.widget.description = env.cfg.pkg.description
+  // Add author (extract before from package.json author field)
+  if (env.cfg.pkg.author) {
+    // Author is an object
+    if (env.type(env.cfg.pkg.author) === 'object' && env.cfg.pkg.author.name) {
+      const author = { _: env.cfg.pkg.author.name }
+      if (env.cfg.pkg.author.email || env.cfg.pkg.author.url) author.$ = {}
+      if (env.cfg.pkg.author.email) author.$.email = env.cfg.pkg.author.email
+      if (env.cfg.pkg.author.url) author.$.href = env.cfg.pkg.author.url
+      newConfig.widget.author = author
+    // Author is a string
+    } else if (env.type(env.cfg.pkg.author) === 'string') {
+      const name = env.cfg.pkg.author.replace(/<(.+)>/, '').replace(/\((.+)\)/, '').trim()
+      const email = env.cfg.pkg.author.match(/<(.+)>/) ? env.cfg.pkg.author.match(/<(.+)>/)[1].trim() : null
+      const href = env.cfg.pkg.author.match(/\((.+)\)/) ? env.cfg.pkg.author.match(/\((.+)\)/)[1].trim() : null
+      if (name !== '') {
+        newConfig.widget.author = { _: name }
+        if (email || href) newConfig.widget.author.$ = {}
+        if (email) newConfig.widget.author.$.email = email
+        if (href) newConfig.widget.author.$.href = href
+      }
+    }
+  }
+  // Define decoder options
+  const opts = {
+    xmldec: {
+      version: '1.0',
+      encoding: 'utf-8',
+    },
+    renderOpts: {
+      pretty: true,
+    },
+  }
+  // Build XML string
+  const xmlStr = new xml.Builder(opts).buildObject(newConfig)
+  // Write to config.xml file
+  fs.writeFile(cordovaConfigFile, xmlStr, (err) => {
+    if (err) reject(new Error('Failed to update Cordova config.xml file'))
+    // Report progress and resolve promise
+    env.log.progress('Updated Cordova config.xml file')
+    resolve()
+  })
 })
 
 // Run steps
 getCurrentConfig()
-  .then(addBasicData)
-  .then((cfg) => {
-    env.log.progress(cfg)
-  })
+  .then(updateConfig)
   .catch((err) => {
     env.log.issue(err.message)
   })
