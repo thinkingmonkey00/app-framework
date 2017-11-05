@@ -71,7 +71,7 @@ module.exports = (params) => {
     webpackConfig.devServer = {
       contentBase: env.path.app(),
       compress: true,
-      port: 8080,
+      port: env.cfg.app.devServerPort,
     }
   }
 

@@ -28,6 +28,7 @@
       "messagingSenderId": ""
     }
   },
+  "devServerPort": 8080,
   "eslint": {
     "extends": "airbnb",
     "rules": {

@@ -8,7 +8,7 @@
 
 On any development command, tests and file updates run before.
 
-- [ ] `npm run dev:web` or `npm run dev` to start the development server with hot-reload in the web browser
+- [x] `npm run dev:web` or `npm run dev` to start the development server with hot-reload in the web browser
 - [ ] `npm run dev:ios` to start the iOS emulator with a development build
 - [ ] `npm run dev:android` to start the Android emulator with a development build
 

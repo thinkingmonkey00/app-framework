@@ -25,6 +25,7 @@
     "html-webpack-plugin": "^2.30.1",
     "json-scheme-tools": "^1.0.2",
     "lodash": "^4.17.4",
+    "open": "0.0.5",
     "readdir-recursive": "0.0.4",
     "recursive-readdir": "^2.2.1",
     "regex-match-all": "^1.0.2",
@@ -48,7 +49,7 @@
     "update:routes": "node scripts/updateRoutes",
     "update:f7vueDemo": "node scripts/updateF7VueDemo && npm run test:eslint",
     "dev": "npm run dev:browser",
-    "dev:browser": "npm run test && npm run update && node scripts/startDevServer",
+    "dev:web": "npm run test && npm run update && node scripts/startDevServer",
     "build": "npm run test && npm run update && rimraf build && node_modules/.bin/webpack --config scripts/config.webpack --env.NODE_ENV=production --progress"
   },
   "engines": {
