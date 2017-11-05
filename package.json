@@ -8,6 +8,7 @@
   "dependencies": {
     "camel-case": "^3.0.0",
     "colors": "^1.1.2",
+    "cordova": "^7.1.0",
     "css-loader": "^0.28.7",
     "download-git-repo": "^1.0.1",
     "eslint": "^4.10.0",
@@ -35,7 +36,8 @@
     "vue-loader": "^13.4.0",
     "vue-template-compiler": "^2.5.2",
     "webpack": "^3.8.1",
-    "webpack-dev-server": "^2.9.4"
+    "webpack-dev-server": "^2.9.4",
+    "xml2js": "^0.4.19"
   },
   "scripts": {
     "test": "npm run test:config && npm run test:eslint && npm run test:pages",
