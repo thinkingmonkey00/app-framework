@@ -50,7 +50,7 @@
     "update:ignore": "node scripts/updateIgnoreFiles",
     "update:routes": "node scripts/updateRoutes",
     "update:f7vueDemo": "node scripts/updateF7VueDemo && npm run test:eslint",
-    "dev": "npm run dev:browser",
+    "dev": "npm run dev:web",
     "dev:web": "npm run test && npm run update && node scripts/startDevServer",
     "build": "npm run test && npm run update && rimraf build && node_modules/.bin/webpack --config scripts/config.webpack --env.NODE_ENV=production --progress"
   },
