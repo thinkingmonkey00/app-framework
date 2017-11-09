@@ -27,10 +27,10 @@ params.push('--output-file')
 params.push(logFile)
 
 // Run ESLint
-const process = spawn(params.shift(), params)
+const cmd = spawn(params.shift(), params)
 
 // Act on ESLint processs has finished
-process.on('close', (statusCode) => {
+cmd.on('close', (statusCode) => {
   // If errors found, show error message and exit script
   if (statusCode === 1) env.log.error('ESLint found some unconformities, please check the file eslint.log')
   // Else, delete log file

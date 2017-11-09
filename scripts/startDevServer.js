@@ -13,22 +13,24 @@ const webpackConfigFile = env.path.scripts('config.webpack')
 env.log.progress('Webpack Dev Server is starting - please wait ...')
 
 // Spawn child process
-const process = spawn(binFile, ['--config', webpackConfigFile])
+const cmd = spawn(binFile, ['--config', webpackConfigFile, '--disableHostCheck'])
 
 // Log child process output and start browser once
 let browserStarted = false
-process.stdout.on('data', (txt) => {
+cmd.stdout.on('data', (txt) => {
   env.log.progress(`${txt}`)
   if (!browserStarted && `${txt}`.match(/Compiled successfully/)) {
     browserStarted = true
-    open(`http://localhost:${env.cfg.app.devServerPort}`)
+    const host = process.env.IP || 'localhost'
+    const port = process.env.PORT || env.cfg.app.devServerPort
+    open(`http://${host}:${port}`)
   }
 })
-process.stderr.on('data', (txt) => {
+cmd.stderr.on('data', (txt) => {
   env.log.warning(`${txt}`)
 })
 
 // Log error if Webpack Dev Server closes with an error
-process.on('close', (statusCode) => {
+cmd.on('close', (statusCode) => {
   if (statusCode === 1) env.log.error('Webpack Dev Server has encountered an error')
 })
