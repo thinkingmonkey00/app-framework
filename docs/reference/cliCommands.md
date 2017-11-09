@@ -1,4 +1,4 @@
-# CLI Commands Refence
+# CLI Commands Reference
 
 > This document is part of the [App Framework Documentation](../../README_V2.md#documentation)
 
