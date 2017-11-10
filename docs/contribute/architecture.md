@@ -97,14 +97,13 @@ Logging
 
 ## Client Code
 
-The client code is bundled by Webpack on any dev or build command.
+The client code is bundled by Webpack on any dev or build command. In order of relevance:
 
 ```
 client/
 ├── mixins/              # Global mixins
-├── app.js               # Loads the app component, the pages, initialize the app and removes the splash screen
-├── framework.js         # Loads Framework7/Vue, icon fonts, mixins and attaches the Vue to the window object 
 ├── init.js              # Provides the splash screen, preloading functionality and phone frame handling
-├── index.html           # Provides the initial HTML template
-└── init.js              # Provides the splash screen, preloading functionality and phone frame handling
+├── framework.js         # Loads Framework7/Vue, icon fonts, mixins and attaches the Vue to the window object 
+├── app.js               # Loads the app component, the pages, initialize the app and removes the splash screen
+└── index.html           # Provides the initial HTML template and the init chunk
 ```
