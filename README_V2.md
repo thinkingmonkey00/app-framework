@@ -28,8 +28,8 @@
 
 **Reference** for the experts
 
+- [Architecture](docs/reference/architecture.md)
 - [CLI Commands](docs/reference/cliCommands.md)
-- ...
 - ...
 
 **Guidelines** for the contributors
