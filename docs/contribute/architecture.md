@@ -1,4 +1,4 @@
-# App Framework 2 Architecture
+# App Framework 2 - Architecture
 
 > This document is part of the [App Framework Documentation](../../README_V2.md#documentation)
 
