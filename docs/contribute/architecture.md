@@ -53,7 +53,7 @@ Runtime information
 
 - [ ] `os` - Current operating system (*mac*, *win* or *linux*)
 - [ ] `mode` - Current runtime mode (*development* or *production*)
-- [ ] `installed` - App Framework itself is developed (*false*) or installed as a module (*true*)
+- [ ] `installed` - App Framework is cloned (*false*) or installed as a module (*true*)
 
 ### Configuration
 
