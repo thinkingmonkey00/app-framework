@@ -94,3 +94,15 @@ Logging
 
 - [ ] File **scripts/config.json** contains the script configuration
 - [ ] Configuration is prefered over repetitions and parameters in script files
+
+## Client Code
+
+```
+client/
+├── mixins/              # Global mixins
+├── app.js               # Loads the app component, the pages, initialize the app and removes the splash screen
+├── framework.js         # Loads Framework7/Vue, icon fonts, mixins and attaches the Vue to the window object 
+├── init.js              # Provides the splash screen, preloading functionality and phone frame handling
+├── index.html           # Provides the initial HTML template
+└── init.js              # Provides the splash screen, preloading functionality and phone frame handling
+```
