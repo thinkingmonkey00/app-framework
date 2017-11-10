@@ -22,7 +22,7 @@
 - [x] Folder **scripts** contains all CLI callable scripts in sub folders
 - [x] File naming corresponds to script naming in file **package.json**
 - [x] Per sub folder, there is a grouped script in **package.json** file
-- [x] File **scripts/config.json** contains the scripts configuration
+- [x] File **scripts/config.json** contains the script configuration
 
 ### Example
 
