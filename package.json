@@ -40,19 +40,21 @@
     "xml2js": "^0.4.19"
   },
   "scripts": {
-    "test": "npm run test:config && npm run test:eslint && npm run test:pages",
-    "test:config": "node scripts/fixConfiguration",
+    "postinstall": "npm run create:appFiles && npm run update",
+    "create:appFiles": "node scripts/createAppFiles",
+    "test": "npm run test:eslint && npm run test:pages",
     "test:eslint": "node scripts/testESLint",
     "test:pages": "node scripts/testPagesFolder",
-    "update": "npm run update:npm && npm run update:eslint && npm run update:ignore",
+    "update": "npm run update:config && npm run update:npm && npm run update:eslint && npm run update:ignore",
+    "update:config": "node scripts/updateConfiguration",
     "update:npm": "node scripts/updateNPMFile",
     "update:eslint": "node scripts/updateESLintFile",
     "update:ignore": "node scripts/updateIgnoreFiles",
     "update:routes": "node scripts/updateRoutes",
     "update:f7vueDemo": "node scripts/updateF7VueDemo && npm run test:eslint",
     "dev": "npm run dev:web",
-    "dev:web": "npm run test && npm run update && node scripts/startDevServer",
-    "build": "npm run test && npm run update && rimraf build && node_modules/.bin/webpack --config scripts/config.webpack --env.NODE_ENV=production --progress"
+    "dev:web": "npm run update && npm run test && node scripts/startDevServer",
+    "build": "npm run update && npm run test && rimraf build && node_modules/.bin/webpack --config scripts/config.webpack --env.NODE_ENV=production --progress"
   },
   "engines": {
     "node": ">= 6.0.0",

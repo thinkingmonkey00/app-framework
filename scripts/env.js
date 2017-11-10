@@ -13,6 +13,7 @@ env.type = (input) => {
   if (typeof input !== 'object') return typeof input
   else if (input === null) return 'null'
   else if (Array.isArray(input)) return 'array'
+  else if (input instanceof Error) return 'error'
   return 'object'
 }
 
@@ -60,6 +61,7 @@ const log = (...args) => {
     if (msgType === 'object' || msgType === 'array') message = JSON.stringify(message, null, 2)
     if (msgType === 'null' || msgType === 'number') message = JSON.stringify(message)
     if (msgType === 'undefined') message = 'undefined'
+    if (msgType === 'error') message = messages[n].message
     messages[n] = message
   }
   // Log message to console
