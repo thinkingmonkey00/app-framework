@@ -103,12 +103,12 @@ The client code is bundled with Webpack on any dev or build command.
 
 ```
 client/
-├── mixins/              # Global mixins
-├── app.js               # Loads the app component, the pages, initialize the app and removes the splash screen
-├── framework.js         # Loads Framework7/Vue, icon fonts, mixins and attaches the Vue to the window object 
-├── index.html           # Provides the initial HTML template and the init chunk
-├── init.js              # Provides the splash screen, preloading functionality and phone frame handling
-└── webpackConfig.js     # Provides the Webpack configuration for development and production (no ES6 module support)
+├── mixins/            # Global mixins
+├── app.js             # Loads the app component, the pages, initialize the app and removes the splash screen
+├── framework.js       # Loads Framework7/Vue, icon fonts, mixins and attaches the Vue to the window object 
+├── index.html         # Provides the initial HTML template and the init chunk
+├── init.js            # Provides the splash screen, preloading functionality and phone frame handling
+└── webpackConfig.js   # Provides the Webpack config for development and production (no ES6 module support)
 ```
 
 ### Loading Sequence
