@@ -47,7 +47,7 @@ Example file **package.json**
 
 ### Common functions and values
 
-- [ ] File **scripts/common.js** provides common functions and values
+- [ ] File **scripts/common.js** provides obligatory functions and values
 
 Runtime information
 
