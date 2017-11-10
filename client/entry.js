@@ -1,9 +1,9 @@
 // Purpose: Entry point for app client code (no vendors)
 
-// Import app component (path will be upadted before each build)
+// Import app component (path will be udpated on postinstall)
 import app from '../app/app.vue'
 
-// Import routes (path will be updated before each build)
+// Import routes (path will be updated on postinstall)
 import routes from '../app/routes'
 
 // Export Vue application

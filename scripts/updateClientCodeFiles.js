@@ -22,3 +22,18 @@ try {
   env.log.issue('Failed to update client/entry.js file')
 }
 
+// Update mixins/loadAppConfiguration.js file
+try {
+  // Read file
+  let content = fs.readFileSync(env.path.client('mixins/loadAppConfiguration.js'), { encoding: 'utf8' })
+  // Update app Config path
+  const path = env.rel(env.path.scripts(), env.path.app('config.json'))
+  content = content.replace(/import appConfig from '(.*)'/, `import appConfig from '${path}'`)
+  // Write file
+  fs.writeFileSync(env.path.client('mixins/loadAppConfiguration.js'), content)
+  // Log progress
+  env.log.progress('Updated mixins/loadAppConfiguration.js file')
+} catch (err) {
+  env.log.issue('Failed to update mixins/loadAppConfiguration.js file')
+}
+
