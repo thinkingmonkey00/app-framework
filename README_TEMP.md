@@ -91,6 +91,7 @@ Folder **scripts** contains all CLI callable scripts.
     - `env.path.npm(...args)` - With node_modules folder as root
     - `env.path.bin(...args)` - With node_modules/.bin folder as root
     - `env.path.cache(...args)` - With node_modules/.app-framework-cache folder as root
+  - `env.rel(from, to)` - Returns relative path between two absolute paths
   - `env.cfg` - Returns content of the configuration files (not updated during script runtime)
     - `env.cfg.proj` - From project folder package.json file
     - `env.cfg.app` - From app folder config.json file

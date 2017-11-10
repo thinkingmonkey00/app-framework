@@ -21,12 +21,15 @@ module.exports = (params) => {
   }
 
   // Add entry point
-  webpackConfig.entry = env.path.client('entry.js')
+  webpackConfig.entry = {
+    app: env.path.client('entry.js'),
+    vendor: env.path.client('vendor.js'),
+  }
 
   // Add output point
   webpackConfig.output = {
     path: env.path.proj('build'),
-    filename: 'bundle.js',
+    filename: 'js/[name].bundle.js',
   }
 
   // Add Vue loader
@@ -41,7 +44,7 @@ module.exports = (params) => {
     use: mode === 'production' ? ExtractTextPlugin.extract({ loader: 'css-loader', options: { minimize: true } }) : ['style-loader', 'css-loader'],
   })
   if (mode === 'production') {
-    webpackConfig.plugins.push(new ExtractTextPlugin('bundle.css'))
+    webpackConfig.plugins.push(new ExtractTextPlugin('css/[name].bundle.css'))
   }
 
   // Compress JS and CSS

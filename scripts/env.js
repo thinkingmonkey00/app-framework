@@ -32,6 +32,9 @@ env.path = {
   cache: (...args) => path.resolve(__dirname, env.isInstalled ? '../../.app-framework-cache/' : '../node_modules/.app-framework-cache/', ...args),
 }
 
+// Function to get relative path between two parts
+env.rel = (from, to) => path.relative(from, to)
+
 // Load configuration files
 env.cfg = {
   proj: fs.existsSync(env.path.proj('package.json')) ? fs.readJsonSync(env.path.proj('package.json')) : {},

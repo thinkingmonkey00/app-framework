@@ -28,12 +28,12 @@ fs.pathExists(env.path.app(), (folderErr, folderExists) => {
         const pageHomeVueFileContent = [
           '<template>',
           '  <f7-page>',
-          '    <f7-navbar :title="$config.appTitle" />',
+          '    <f7-navbar :title="$config.appName" />',
           '    <f7-block>',
           '      <f7-button raised fill external href="https://github.com/scriptPilot/app-framework#documentation">Documentation</f7-button>',
           '    </f7-block>',
           '  </f7-page>',
-          '</template>'
+          '</template>',
         ].join('\n')
         fs.outputFile(env.path.app('pages/home.vue'), pageHomeVueFileContent, (errHomeVue) => {
           if (errHomeVue) env.log.issue('Failed to create pages/home.vue file')

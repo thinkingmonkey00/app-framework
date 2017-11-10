@@ -2,7 +2,7 @@
   <f7-page>
 
     <!-- Navbar -->
-    <f7-navbar title="App Framework - Demo" />
+    <f7-navbar title="App Framework 2 - Demo" />
 
     <!-- Buttons to switch the style -->
     <f7-block>

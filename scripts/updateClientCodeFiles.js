@@ -9,9 +9,11 @@ try {
   // Read file
   let entryJSContent = fs.readFileSync(env.path.client('entry.js'), { encoding: 'utf8' })
   // Update app component path
-  entryJSContent = entryJSContent.replace(/import app from '(.*)'/, `import app from '${env.path.app('app.vue')}'`)
+  const appCompPath = env.rel(env.path.scripts(), env.path.app('app.vue'))
+  entryJSContent = entryJSContent.replace(/import app from '(.*)'/, `import app from '${appCompPath}'`)
   // Update route file path
-  entryJSContent = entryJSContent.replace(/import routes from '(.*)'/, `import routes from '${env.path.app('routes.js')}'`)
+  const routesPath = env.rel(env.path.scripts(), env.path.app('routes'))
+  entryJSContent = entryJSContent.replace(/import routes from '(.*)'/, `import routes from '${routesPath}'`)
   // Write file
   fs.writeFileSync(env.path.client('entry.js'), entryJSContent)
   // Log progress
