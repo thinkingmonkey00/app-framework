@@ -41,11 +41,12 @@ fs.pathExists(env.path.app(), (folderErr, folderExists) => {
           const routesJSContent = [
             'import home from \'./pages/home.vue\'',
             '',
-            'export default {',
-            '  components: {',
-            '    home: home',
+            'export default [',
+            '  {',
+            '    path: \''/\'',
+            '    component: home',
             '  }',
-            '}'
+            ']'
           ].join('\n')
           fs.outputFile(env.path.app('routes.js'), routesJSContent, (errRoutesJS) => {
             if (errRoutesJS) env.log.issue('Failed to create routes.js file')
