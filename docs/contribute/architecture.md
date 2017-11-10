@@ -22,7 +22,7 @@
 
 ### File Structure
 
-- [x] Folder **scripts** contains all CLI callable scripts in sub folders
+- [x] Folder **scripts** contains all CLI callable scripts in sub folders (no ES6 module support)
 - [x] File naming corresponds to script naming in file **package.json**
 - [x] Per sub folder, there is a grouped script in **package.json** file
 
@@ -97,13 +97,20 @@ Logging
 
 ## Client Code
 
-The client code is bundled by Webpack on any dev or build command. In order of relevance:
+The client code is bundled with Webpack on any dev or build command.
+
+### Folder Structure
 
 ```
 client/
 ├── mixins/              # Global mixins
-├── init.js              # Provides the splash screen, preloading functionality and phone frame handling
-├── framework.js         # Loads Framework7/Vue, icon fonts, mixins and attaches the Vue to the window object 
 ├── app.js               # Loads the app component, the pages, initialize the app and removes the splash screen
-└── index.html           # Provides the initial HTML template and the init chunk
+├── framework.js         # Loads Framework7/Vue, icon fonts, mixins and attaches the Vue to the window object 
+├── index.html           # Provides the initial HTML template and the init chunk
+├── init.js              # Provides the splash screen, preloading functionality and phone frame handling
+└── webpackConfig.js     # Provides the Webpack configuration for development and production (no ES6 module support)
 ```
+
+### Loading Sequence
+
+![Loading Sequence](../../media/loadingSequence.png)
