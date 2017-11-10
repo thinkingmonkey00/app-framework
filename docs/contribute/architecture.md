@@ -13,20 +13,20 @@
 
 - [x] All relevant facts must be part of the documentation
 - [x] Documentation must be kept short, descriptive and easy to understand
-- [x] Documentation must contain examples
-- [x] All required user input must be indicated like `this`
+- [x] Documentation must contain examples`
 - [x] All folder or file names must be indicated like **this**
+- [x] All required user input must be indicated like `this
+- [x] All returned values must be indicated like *this*
 
 ## Scripts
+
+### File Structure
 
 - [x] Folder **scripts** contains all CLI callable scripts in sub folders
 - [x] File naming corresponds to script naming in file **package.json**
 - [x] Per sub folder, there is a grouped script in **package.json** file
-- [x] File **scripts/config.json** contains the script configuration
 
-#### Example
-
-File **package.json**
+Example file **package.json**
 
 ```
 "scripts": {
@@ -36,7 +36,7 @@ File **package.json**
 }
 ```
 
-Folder **scripts**
+Example folder **scripts**
 
 ```
 scripts/
@@ -44,3 +44,17 @@ scripts/
 ├── update/eslint.js
 └── config.json
 ```
+
+### Common functions and values
+
+- [x] File **scripts/common.js** provides common functions and values
+
+Runtime information
+
+- [ ] `os` - Current operating system (*mac*, *win* or *linux*)
+- [ ] `mode` - Current runtime mode (*development* or *production*)
+
+### Configuration
+
+- [x] File **scripts/config.json** contains the script configuration
+- [x] Configuration is prefered over repetitions and parameters in script files
