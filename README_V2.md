@@ -34,8 +34,8 @@
 
 **Guidelines** for the contributors
 
-- ...
-- ...
+- [Architecture](docs/contribution/architecture.md)
+- [Common Functions and Values](docs/contribution/commonFunctionsAndValues.md)
 - ...
 
 ## Demo App
