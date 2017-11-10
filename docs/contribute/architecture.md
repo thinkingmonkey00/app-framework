@@ -47,7 +47,7 @@ Example file **package.json**
 
 ### Common functions and values
 
-- [x] File **scripts/common.js** provides common functions and values
+- [ ] File **scripts/common.js** provides common functions and values
 
 Runtime information
 
@@ -92,5 +92,5 @@ Logging
 
 ### Configuration
 
-- [x] File **scripts/config.json** contains the script configuration
-- [x] Configuration is prefered over repetitions and parameters in script files
+- [ ] File **scripts/config.json** contains the script configuration
+- [ ] Configuration is prefered over repetitions and parameters in script files
