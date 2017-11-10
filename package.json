@@ -3,7 +3,7 @@
   "description": "iOS and Android Apps with HTML & JavaScript - develop, build and deploy - free and open source!",
   "author": "scriptPilot <mail@scriptPilot.de> (https://github.com/scriptPilot)",
   "repository": "https://github.com/scriptPilot/app-framework.git",
-  "version": "2.0.0-alpha.1",
+  "version": "2.0.0-alpha.14",
   "license": "MIT",
   "dependencies": {
     "camel-case": "^3.0.0",
@@ -45,7 +45,8 @@
     "test": "npm run test:eslint && npm run test:pages",
     "test:eslint": "node scripts/testESLint",
     "test:pages": "node scripts/testPagesFolder",
-    "update": "npm run update:config && npm run update:npm && npm run update:eslint && npm run update:ignore",
+    "update": "npm run update:scripts && npm run update:config && npm run update:npm && npm run update:eslint && npm run update:ignore",
+    "update:scripts": "node scripts/updateScripts",
     "update:config": "node scripts/updateConfiguration",
     "update:npm": "node scripts/updateNPMFile",
     "update:eslint": "node scripts/updateESLintFile",

@@ -61,7 +61,7 @@ const log = (...args) => {
     if (msgType === 'object' || msgType === 'array') message = JSON.stringify(message, null, 2)
     if (msgType === 'null' || msgType === 'number') message = JSON.stringify(message)
     if (msgType === 'undefined') message = 'undefined'
-    if (msgType === 'error') message = messages[n].message
+    if (msgType === 'error') message = message.message // eslint-disable-line
     messages[n] = message
   }
   // Log message to console

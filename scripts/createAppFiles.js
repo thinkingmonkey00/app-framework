@@ -43,10 +43,10 @@ fs.pathExists(env.path.app(), (folderErr, folderExists) => {
             '',
             'export default [',
             '  {',
-            '    path: \''/\'',
+            '    path: \'/\',',
             '    component: home',
             '  }',
-            ']'
+            ']',
           ].join('\n')
           fs.outputFile(env.path.app('routes.js'), routesJSContent, (errRoutesJS) => {
             if (errRoutesJS) env.log.issue('Failed to create routes.js file')
