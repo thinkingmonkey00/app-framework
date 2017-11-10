@@ -113,4 +113,5 @@ client/
 
 ### Loading Sequence
 
+
 ![Loading Sequence](../../media/loadingSequence.png)
