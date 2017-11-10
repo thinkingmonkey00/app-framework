@@ -97,6 +97,8 @@ Logging
 
 ## Client Code
 
+The client code is bundled by Webpack on any dev or build command.
+
 ```
 client/
 ├── mixins/              # Global mixins
