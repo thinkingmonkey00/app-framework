@@ -20,11 +20,6 @@
 
 ## Scripts
 
-### Configuration
-
-- [x] File **scripts/config.json** contains the script configuration
-- [x] Configuration is prefered over repetitions and parameters in script files
-
 ### File Structure
 
 - [x] Folder **scripts** contains all CLI callable scripts in sub folders
@@ -82,11 +77,20 @@ Relative path
 
 - [ ] `path.rel(from, to)` - Relative path between two folders
 
+Script execution
+
+- [ ] `cmd(workingDirectory, commands, onSuccess, onError)` - To run a child process
+
 Logging
 
 - [ ] `log.progress(...input)` - To log the progress to the console (input is transformed to JSON)
-- [ ] `log.error(...input)` - To log a warning to the console
+- [ ] `log.error(...input)`- To log a warning to the console
 - [ ] `log.error(...input)` - To log an error to the console and exit the script with status code 1
 - [ ] `log.issue(...input)` - To log an error to the console, ask to create and issue and exit the script with status code 1
 - [ ] `log.exit(...input)` - To log the progress to the console and exit the script with status code 0
 - [ ] `log.debug(...input)` - To log the progress to the console only for app configuration `"debug": true`
+
+### Configuration
+
+- [x] File **scripts/config.json** contains the script configuration
+- [x] Configuration is prefered over repetitions and parameters in script files
