@@ -26,6 +26,15 @@
 - [x] File naming corresponds to script naming in file **package.json**
 - [x] Per sub folder, there is a grouped script in **package.json** file
 
+Example folder **scripts**
+
+```
+scripts/
+├── update/config.js
+├── update/eslint.js
+└── config.json
+```
+
 Example file **package.json**
 
 ```
@@ -34,15 +43,6 @@ Example file **package.json**
   "update:config": "node scripts/update/config",
   "update:eslint": "node scripts/update/eslint"
 }
-```
-
-Example folder **scripts**
-
-```
-scripts/
-├── update/config.js
-├── update/eslint.js
-└── config.json
 ```
 
 ### Common functions and values
