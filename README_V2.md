@@ -17,10 +17,7 @@
 1. Run `mkdir my-app` to create a new project folder
 2. Run `cd my-app` to open the project folder
 3. Run `echo {} > package.json` to create the package.json file
-4. Run `npm install --save-dev app-framework` to
-   - install App Framework and all dependencies
-   - bootstrap the project folder
-   - update the package.json file
+4. Run `npm install --save-dev app-framework` for installation
 5. Run `npm run dev` to start the local development server
 
 **Tutorial** for the beginners
