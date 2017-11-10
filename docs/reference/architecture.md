@@ -15,10 +15,6 @@ The following project folder structure will be created by default after installa
 │   ├── pages/                  # App page components
 │   ├── app.vue                 # App main component
 │   ├── config.js               # App configuration
-│   ├── configDatabase.json     # Firebase database configuration
-│   ├── configFTP.json          # FTP server configuration
-│   ├── configHosting.txt       # Firebase hosting configuration
-│   ├── configStorage.txt       # Firebase storage configuration
 │   ├── icon.png                # App icon file (minimum size is 1024 pixel)
 │   └── routes.json             # App routes configuration
 ├── build/                      # Build files (created after first build)
