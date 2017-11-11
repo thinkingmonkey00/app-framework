@@ -13,16 +13,27 @@
 
 - [x] All relevant facts must be part of the documentation
 - [x] Documentation must be kept short, descriptive and easy to understand
-- [x] Documentation must contain examples`
+- [x] Documentation must contain examples
+- [x] Documentation headlines must be written in [Title Case](http://www.grammar-monster.com/lessons/capital_letters_title_case.htm)
 - [x] All folder or file names must be indicated like **this**
-- [x] All required user input must be indicated like `this
+- [x] All required user input must be indicated like `this`
 - [x] All returned values must be indicated like *this*
 
 ## Scripts
 
-### File structure
+### File Structure
 
 - [ ] Folder **scripts** contains all CLI callable scripts in sub folders (no ES6 module support)
+
+```
+scripts/
+├── .../           # One sub folder per script group (create, update, ...)
+├── common.js      # Provides common obligatory functions and values
+├── config.json    # Contains script configuration
+```
+
+### Sub Folders
+
 - [ ] File naming corresponds to script naming in file **package.json**
 - [ ] Per sub folder, there is a grouped script in **package.json** file
 
@@ -45,9 +56,9 @@ Example file **package.json**
 }
 ```
 
-### Common Functions and Values
+## Common Functions
 
-- [ ] File **scripts/common.js** provides obligatory [functions and values](commonFunctionsAndValues.md)
+- [ ] File **scripts/common.js** provides obligatory [functions and values](commonFunctions.md)
 
 ## Configuration
 
@@ -56,7 +67,7 @@ Example file **package.json**
 
 ## Client Code
 
-The client code is bundled with Webpack on any dev or build command.
+- [ ] The client code is bundled with Webpack on any dev or build command
 
 ### Folder Structure
 
@@ -64,7 +75,7 @@ The client code is bundled with Webpack on any dev or build command.
 client/
 ├── mixins/            # Global mixins
 ├── app.js             # Loads the app component, the pages, initialize the app and removes the splash screen
-├── framework.js       # Loads Framework7/Vue, icon fonts, mixins and attaches the Vue to the window object 
+├── framework.js       # Loads Framework7/Vue, icon fonts, mixins and attaches the Vue to the window object
 ├── index.html         # Provides the initial HTML template and the init chunk
 ├── init.js            # Provides the splash screen, preloading functionality and phone frame handling
 └── webpackConfig.js   # Provides the Webpack config for development and production (no ES6 module support)

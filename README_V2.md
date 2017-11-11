@@ -35,8 +35,8 @@
 **Guidelines** for the contributors
 
 - [Architecture](docs/contribution/architecture.md)
-- [Common Functions and Values](docs/contribution/commonFunctionsAndValues.md)
-- ...
+- [Common Functions](docs/contribution/commonFunctions.md)
+- Workflow
 
 ## Demo App
 

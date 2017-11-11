@@ -1,4 +1,4 @@
-# Common Functions and Values
+# Common Functions
 
 > This document is part of the [App Framework Documentation](../../README_V2.md#documentation)
 
@@ -11,7 +11,6 @@ The file **scripts/common.js** provided obligatory helper functions and values f
 - [ ] `installed` - App Framework is cloned (*false*) or installed as a module (*true*)
 
 ## Configuration
-
 - [ ] `cfg.proj` - Contains app project **package.json** file
 - [ ] `cfg.app` - Contains app **config.json** file
 - [ ] `cfg.pkg` - Contains App Framework **package.json** file
