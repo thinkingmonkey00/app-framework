@@ -41,7 +41,7 @@ Folder Structure
 client/
 ├── mixins/            # Global mixins
 ├── app.js             # Loads the app component, the pages, init. the app and removes the splash screen
-├── framework.js       # Loads Framework7/Vue, icon fonts, mixins and attaches the Vue to the window object
+├── framework.js       # Loads Framework7/Vue, icon fonts, mixins and attaches the Vue to the window obj.
 ├── index.html         # Provides the initial HTML template and the init chunk
 ├── init.js            # Provides the splash screen, preloading functionality and phone frame handling
 └── webpackConfig.js   # Provides the Webpack config for development and production
