@@ -11,9 +11,14 @@
 
 ## Documentation Rules
 
+Content
+
 - [x] All relevant facts must be part of the documentation
 - [x] Documentation must be kept short, descriptive and easy to understand
-- [x] Documentation must contain examples
+- [x] Documentation must provide examples
+
+Typography
+
 - [x] Documentation headlines must be written in [Title Case](http://www.grammar-monster.com/lessons/capital_letters_title_case.htm)
 - [x] All folder or file names must be indicated like **this**
 - [x] All required user input must be indicated like `this`
@@ -21,9 +26,13 @@
 
 ## Scripts
 
-### File Structure
+Sub folders
 
 - [ ] Folder **scripts** contains all CLI callable scripts in sub folders (no ES6 module support)
+- [ ] File naming corresponds to script naming in file **package.json**
+  - Example: 
+
+
 
 ```
 scripts/
@@ -32,9 +41,15 @@ scripts/
 ├── config.json    # Contains script configuration
 ```
 
+
+
+
+
+
+
 ### Sub Folders
 
-- [ ] File naming corresponds to script naming in file **package.json**
+
 - [ ] Per sub folder, there is a grouped script in **package.json** file
 
 Example folder **scripts**
