@@ -52,3 +52,8 @@ Loading Sequence
 <br />
 
 ![Loading Sequence](../../media/loadingSequence.png)
+
+## Demo App
+
+- [ ] The Demo App covers all App Framework functions, provided by the mixins
+- [ ] The Demo App includes the Framework7-Vue kitchen sink for demonstration purposes
