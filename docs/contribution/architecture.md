@@ -33,7 +33,7 @@ Typography
 
 ## Client Code
 
-- [ ] The client code is bundled with Webpack on any dev or build command
+- [ ] The client code is bundled with Webpack on any dev or build command
 
 Folder Structure
 
