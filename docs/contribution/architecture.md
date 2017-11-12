@@ -26,6 +26,7 @@ Typography
 
 ## Scripts
 
+- [ ] All scripts must be called with Babel Node to support import/export statements
 - [ ] All scripts must be saved into sub folders (Example: `test:eslint` to **scripts/test/eslint.js**)
 - [ ] File **scripts/common.js** provides obligatory [functions and values](commonFunctions.md)
 - [ ] File **scripts/config.json** contains the obligatory script configuration
