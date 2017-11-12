@@ -15,7 +15,7 @@ Content
 
 - [x] All relevant facts must be part of the documentation
 - [x] Documentation must be kept short, descriptive and easy to understand
-- [x] Documentation must provide examples
+- [x] Documentation must contain examples
 
 Typography
 
@@ -26,77 +26,27 @@ Typography
 
 ## Scripts
 
-Sub folders
-
-- [ ] Folder **scripts** contains all CLI callable scripts in sub folders (no ES6 module support)
-- [ ] File naming corresponds to script naming in file **package.json**
-  - Example: 
-
-
-
-```
-scripts/
-├── .../           # One sub folder per script group (create, update, ...)
-├── common.js      # Provides common obligatory functions and values
-├── config.json    # Contains script configuration
-```
-
-
-
-
-
-
-
-### Sub Folders
-
-
-- [ ] Per sub folder, there is a grouped script in **package.json** file
-
-Example folder **scripts**
-
-```
-scripts/
-├── update/config.js
-├── update/eslint.js
-└── config.json
-```
-
-Example file **package.json**
-
-```
-"scripts": {
-  "update": "npm run update:config && npm run update:eslint",
-  "update:config": "node scripts/update/config",
-  "update:eslint": "node scripts/update/eslint"
-}
-```
-
-## Common Functions
-
+- [ ] All scripts must be saved into sub folders (Example: `test:eslint` to **scripts/test/eslint.js**)
 - [ ] File **scripts/common.js** provides obligatory [functions and values](commonFunctions.md)
-
-## Configuration
-
-- [ ] File **scripts/config.json** contains the script configuration
-- [ ] Configuration is prefered over repetitions and parameters in script files
+- [ ] File **scripts/config.json** contains the obligatory script configuration
 
 ## Client Code
 
 - [ ] The client code is bundled with Webpack on any dev or build command
 
-### Folder Structure
+Folder Structure
 
 ```
 client/
 ├── mixins/            # Global mixins
-├── app.js             # Loads the app component, the pages, initialize the app and removes the splash screen
+├── app.js             # Loads the app component, the pages, init. the app and removes the splash screen
 ├── framework.js       # Loads Framework7/Vue, icon fonts, mixins and attaches the Vue to the window object
 ├── index.html         # Provides the initial HTML template and the init chunk
 ├── init.js            # Provides the splash screen, preloading functionality and phone frame handling
-└── webpackConfig.js   # Provides the Webpack config for development and production (no ES6 module support)
+└── webpackConfig.js   # Provides the Webpack config for development and production
 ```
 
-### Loading Sequence
+Loading Sequence
 
 <br />
 
