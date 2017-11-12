@@ -26,6 +26,8 @@ Typography
 
 ## Scripts
 
+The scripts are called by the console and provide workflow-supporting functionality.
+
 - [ ] All scripts must be called with Babel Node to support import/export statements
 - [ ] All scripts must be saved into sub folders (Example: `test:eslint` to **scripts/test/eslint.js**)
 - [ ] File **scripts/common.js** provides obligatory [functions and values](commonFunctions.md)
@@ -33,19 +35,16 @@ Typography
 
 ## Client Code
 
-- [ ] The client code is bundled with Webpack on any dev or build command
+The client code is everything what is build with Webpack and loaded by the browser or Cordova later on.
 
-Folder Structure
+Source files
 
-```
-client/
-├── mixins/            # Global mixins
-├── app.js             # Loads the app component, the pages, init. the app and removes the splash screen
-├── framework.js       # Loads Framework7/Vue, icon fonts, mixins and attaches the Vue to the window obj.
-├── index.html         # Provides the initial HTML template and the init chunk
-├── init.js            # Provides the splash screen, preloading functionality and phone frame handling
-└── webpackConfig.js   # Provides the Webpack config for development and production
-```
+- **index.html** file to show the splash screen and load the **init.js** file
+- **init.js** file to provide the phone frame handling and preloading functionality
+- **framework.js** file to load Framework7-Vue, the icon fonts and mixins and provide the Vue object
+- **app.js** file to load the app component and the pages, initialize the App and hide the splash screen
+- **mixins** folder with global Vue mixins to enrich the app with common functionality
+- **webpackConfig.js** file to provide the Webpack development and production configurations
 
 Loading Sequence
 
