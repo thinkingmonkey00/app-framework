@@ -6,7 +6,7 @@
 
 ## Features
 
-#### Core
+**Core**
 
 - [ ] **Beautiful User Interface** with native iOS and Material Design elements and transitions, based on [Framework7](https://framework7.io/)
 - [ ] **Comprehensive Icon Fonts** like [FontAwesome](http://fontawesome.io/), [Framework7 Icons](http://framework7.io/icons/), [Ion](http://ionicons.com/) and [Material Design Icons](https://material.io/icons/) out of the box
@@ -16,7 +16,7 @@
 - [ ] **Single File Components** for powerful but easy to maintain apps, made with [Vue.js](https://vuejs.org/) and [Framework7-Vue](http://framework7.io/vue/)
 - [ ] **Project Folder Creation**, lightweight and well-organized, ready to publish on [GitHub](https://github.com/about)
 
-#### Scripts
+**Scripts**
 
 - [ ] **Live Development Server** with hot module replacement, powered by [Parcel](https://parceljs.org/)
 - [ ] **Test on your own Device** or in any iOS or Android emulator, supported by [Cordova](https://cordova.apache.org/), [Xcode](https://developer.apple.com/xcode/) and [Android Studio](https://developer.android.com/studio)
@@ -25,7 +25,7 @@
 - [ ] **Icon Generation** for favicons, touch icons and splash screens, out of a single image file with [Jimp](https://github.com/oliver-moran/jimp)
 - [ ] **Easy Deployment** without downtime to [Apple App Store](https://developer.apple.com/xcode/), [Google Play Store](https://developer.android.com/studio), [Firebase Hosting](https://firebase.google.com/products/hosting/) or any FTP server
 
-#### Plugins
+**Plugins**
 
 - [ ] **Native Hardware API Plugins** for iOS and Android devices, realized with [Cordova](https://cordova.apache.org/)
 - [ ] **Phone Frame** around your application on big screens, so you can offer desktop access with charm
@@ -44,3 +44,29 @@
 [![Open as Web App](src/media/button-firebase.png)](https://demo.app-framework.com)
 
 ![Screenshots](src/media/screenshots.png)
+
+## Documentation
+
+**Quick Start** for the hurried
+
+1. Run `mkdir my-app` to create a new project folder
+2. Run `cd my-app` to open the project folder
+3. Run `echo {} > package.json` to create the package.json file
+4. Run `npm install app-framework` for installation
+5. Run `npm start` to start the local development server
+
+**Tutorial** for the beginners
+
+- ...
+- ...
+- ...
+
+**Reference** for the experts
+
+- [ ] CLI Commands
+- [ ] Configuration Options
+
+**Guidelines** for the contributors
+
+- [ ] Architecture
+- [ ] Workflow
