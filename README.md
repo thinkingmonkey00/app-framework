@@ -19,6 +19,7 @@
 - [ ] **Test on your own Device** or in any iOS or Android emulator, supported by [Cordova](https://cordova.apache.org/), [XCode](https://developer.apple.com/xcode/) and [Android Studio](https://developer.android.com/studio)
 - [ ] **Test Framework** for code correctness and standard conformity with [ESLint](http://eslint.org/) and for unit tests with [Jest](https://facebook.github.io/jest/)
 - [ ] **Optimized Build Process** for good scores at [Google Lighthouse](https://developers.google.com/web/tools/lighthouse/) or [YSlow](http://yslow.org/), realized with [Parcel](https://parceljs.org/)
+- [ ] **Icon Generation** for favicons, touch icons and splash screens, out of a single image file with [Jimp](https://github.com/oliver-moran/jimp)
 - [ ] **Easy Deployment** without downtime to [Apple App Store](https://developer.apple.com/xcode/), [Google Play Store](https://developer.android.com/studio), [Firebase Hosting](https://firebase.google.com/products/hosting/) or any FTP server
 
 ### Plugins
