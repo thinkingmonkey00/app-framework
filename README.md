@@ -6,7 +6,7 @@
 
 ## Features
 
-### Core
+#### Core
 
 - [ ] **Beautiful User Interface** with native iOS and Material Design elements and transitions, based on [Framework7](https://framework7.io/)
 - [ ] **Comprehensive Icon Fonts** like [FontAwesome](http://fontawesome.io/), [Framework7 Icons](http://framework7.io/icons/), [Ion](http://ionicons.com/) and [Material Design Icons](https://material.io/icons/) out of the box
@@ -16,7 +16,7 @@
 - [ ] **Single File Components** for powerful but easy to maintain apps, made with [Vue.js](https://vuejs.org/) and [Framework7-Vue](http://framework7.io/vue/)
 - [ ] **Project Folder Creation**, lightweight and well-organized, ready to publish on [GitHub](https://github.com/about)
 
-### Scripts
+#### Scripts
 
 - [ ] **Live Development Server** with hot module replacement, powered by [Parcel](https://parceljs.org/)
 - [ ] **Test on your own Device** or in any iOS or Android emulator, supported by [Cordova](https://cordova.apache.org/), [Xcode](https://developer.apple.com/xcode/) and [Android Studio](https://developer.android.com/studio)
@@ -25,7 +25,7 @@
 - [ ] **Icon Generation** for favicons, touch icons and splash screens, out of a single image file with [Jimp](https://github.com/oliver-moran/jimp)
 - [ ] **Easy Deployment** without downtime to [Apple App Store](https://developer.apple.com/xcode/), [Google Play Store](https://developer.android.com/studio), [Firebase Hosting](https://firebase.google.com/products/hosting/) or any FTP server
 
-### Plugins
+#### Plugins
 
 - [ ] **Native Hardware API Plugins** for iOS and Android devices, realized with [Cordova](https://cordova.apache.org/)
 - [ ] **Phone Frame** around your application on big screens, so you can offer desktop access with charm
