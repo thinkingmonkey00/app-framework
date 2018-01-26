@@ -12,6 +12,7 @@
 - [ ] **Comprehensive Icon Fonts** like [FontAwesome](http://fontawesome.io/), [Framework7 Icons](http://framework7.io/icons/), [Ion](http://ionicons.com/) and [Material Design Icons](https://material.io/icons/) out of the box
 - [x] **One Code Base** for all devices with HTML, CSS and JavaScript, realized with [Cordova](https://cordova.apache.org/), supporting [ES2015](https://babeljs.io/learn-es2015/)
 - [x] **Single File Components** for powerful but easy to maintain apps, made with [Vue.js](https://vuejs.org/) and [Framework7-Vue](http://framework7.io/vue/)
+- [ ] **Project Folder Creation**, lightweight and well-organized, ready to publish on [GitHub](https://github.com/about)
 
 ### Scripts
 
