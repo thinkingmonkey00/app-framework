@@ -33,4 +33,4 @@
 - [ ] **Global Data Object** to save user data across several application restarts easily
 - [ ] **Offline Capability** to use the app even without any network connection
 - [ ] **Preloading** for images, fonts and JavaScript files
-- [ ] **Firebase Integration** for several services like [Authentication](https://firebase.google.com/products/auth/), [Realtime Database](https://firebase.google.com/products/realtime-database/), [Firestore](https://firebase.google.com/products/firestore/) or [Cloud Storage](https://firebase.google.com/products/storage/)
+- [ ] **Firebase Integration** for several services like [Authentication](https://firebase.google.com/products/auth/), [Realtime Database](https://firebase.google.com/products/realtime-database/), [Firestore](https://firebase.google.com/products/firestore/) and [Cloud Storage](https://firebase.google.com/products/storage/)
