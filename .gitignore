@@ -1,0 +1,14 @@
+# Exclude cache folder (used by Parcel Bundler)
+.cache/
+
+# Exclude Git folder
+.git/
+
+# Exclude build folder (used by Parcel Bundler)
+build/
+
+# Exclude Node modules folder
+node_modules/
+
+# Exclude log files
+*.log*
