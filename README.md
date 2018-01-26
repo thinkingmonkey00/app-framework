@@ -34,3 +34,13 @@
 - [ ] **Offline Capability** to use the app even without any network connection
 - [ ] **Preloading** for images, fonts and JavaScript files
 - [ ] **Firebase Integration** for several services like [Authentication](https://firebase.google.com/products/auth/), [Realtime Database](https://firebase.google.com/products/realtime-database/), [Firestore](https://firebase.google.com/products/firestore/) and [Cloud Storage](https://firebase.google.com/products/storage/)
+
+## Demo App
+
+[![Download on the App Store Play](media/app-store-download.png)](https://itunes.apple.com/us/app/app-framework-demo/id1203927581?mt=8')
+&nbsp;&nbsp;&nbsp;
+[![Get it on Google Play](media/google-play-download.png)](https://play.google.com/store/apps/details?id=de.scriptpilot.appframework)
+&nbsp;&nbsp;&nbsp;
+[![Open as Web App](media/web-app-visit.png)](https://demo.app-framework.com)
+
+![Screenshots](media/screenshots.png)
