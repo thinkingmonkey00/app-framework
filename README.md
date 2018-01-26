@@ -27,3 +27,4 @@
 
 - [ ] **Native Hardware API Plugins** for iOS and Android devices, realized with [Cordova](https://cordova.apache.org/)
 - [ ] **Phone Frame** around your application on big screens, so you can offer desktop access with charm
+- [ ] **Firebase Integration** for several services like [Authentication](https://firebase.google.com/products/auth/), [Realtime Database](https://firebase.google.com/products/realtime-database/), [Firestore](https://firebase.google.com/products/firestore/) or [Cloud Storage](https://firebase.google.com/products/storage/)
