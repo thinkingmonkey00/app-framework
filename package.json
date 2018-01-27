@@ -19,10 +19,5 @@
   "scripts": {
     "parcel": "cd node_modules/parcel-bundler && npm install && npm install yarn && npm run build && cd ../../",
     "start": "rimraf build/dist && node_modules/.bin/parcel src/client/index.html --port 8080 --out-dir build/dev"
-  },
-  "devDependencies": {
-    "vue-router": "^3.0.1",
-    "vuex": "^3.0.1",
-    "vuex-router-sync": "^5.0.0"
   }
 }
