@@ -18,6 +18,6 @@
   },
   "scripts": {
     "parcel": "cd node_modules/parcel-bundler && npm install && npm install yarn && npm run build && cd ../../",
-    "start": "rimraf build/dist && node_modules/.bin/parcel src/client/index.html --port 8080 --out-dir build/dev"
+    "start": "rimraf build/dist && node_modules/.bin/parcel client/index.html --port 8080 --out-dir build/dev"
   }
 }

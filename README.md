@@ -4,7 +4,7 @@
 
 **iOS and Android Apps with HTML & JavaScript - App Framework combines great pieces of open source code to support your whole workflow with useful scripts and your App with powerful plugins. With App Framework, you could spend your time for your next amazing App and not for the tricky stuff around - free and open source!**
 
-![](src/media/process.png)
+![](media/process.png)
 
 ## Features
 
@@ -40,13 +40,13 @@
 
 ## Demo App
 
-[![Download on the App Store Play](src/media/button-app-store.png)](https://itunes.apple.com/us/app/app-framework-demo/id1203927581?mt=8')
+[![Download on the App Store Play](media/button-app-store.png)](https://itunes.apple.com/us/app/app-framework-demo/id1203927581?mt=8')
 &nbsp;&nbsp;&nbsp;
-[![Get it on Google Play](src/media/button-play-store.png)](https://play.google.com/store/apps/details?id=de.scriptpilot.appframework)
+[![Get it on Google Play](media/button-play-store.png)](https://play.google.com/store/apps/details?id=de.scriptpilot.appframework)
 &nbsp;&nbsp;&nbsp;
-[![Open as Web App](src/media/button-firebase.png)](https://demo.app-framework.com)
+[![Open as Web App](media/button-firebase.png)](https://demo.app-framework.com)
 
-![Screenshots](src/media/screenshots.png)
+![Screenshots](media/screenshots.png)
 
 ## Documentation
 
@@ -71,5 +71,5 @@
 
 **Guidelines** for the contributors
 
-- [ ] Architecture
+- [ ] [Architecture](docs/contribution/architecture.md)
 - [ ] Workflow
