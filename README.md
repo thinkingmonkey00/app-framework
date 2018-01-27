@@ -58,9 +58,10 @@
 
 **Tutorial** for the beginners
 
-- ...
-- ...
-- ...
+- Setup: Node JS - Atom Code Editor - GitHub Repository- App Framework
+- Development: Design - Views - Logic - Data Management - Firebase Integration - Hardware APIs
+- Testing: Development Server - iOS EMulator - Android Emulator - Code Check - Unit Tests
+- Deployment: Build - FTP Server - Firebase - Apple App Store - Android Play Store
 
 **Reference** for the experts
 
