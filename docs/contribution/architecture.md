@@ -15,7 +15,7 @@
 │   ├── init.js          # - Preloader for all resources
 │   └── index.html       # - HTML page
 ├── demo/                # App Framework Demo App files
-├── docs/                # App Framework Documentation files
+├── docs/                # App Framework documentation files
 ├── scripts/             # Scripts for later usage with "npm use ..."
 ├── config.json          # App Framework configuration file
 └── package.json         # App Framework package information file
