@@ -26,4 +26,4 @@
 - App Framework is installed as NPM module in an empty project folder by the end user. After the installation, App Framework completes the project folder to be ready for GitHub publishing and contains a running basic app code base
 - The end user calls scripts to support his workflow, which calls in fact files in the App Framwork module scripts folder
 - The end user configures plugins, which extends the basic Vue app by mixins, located in the App Framework client code folder
-- After App Framework publishes a new version, the end user gets a notification on the dev server and updates App Framwork for each app project
+- After App Framework publishes a new version, the end user gets a notification at the dev server and updates App Framwork for each app project
