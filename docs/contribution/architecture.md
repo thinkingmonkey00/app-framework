@@ -10,7 +10,7 @@
 
 ```
 ├── client/              # Client code for all apps
-│   ├── plugins/         # - Plugins
+│   ├── mixins/          # - Plugins
 │   ├── app.js           # - App initialization
 │   ├── init.js          # - Preloader for all resources
 │   └── index.html       # - HTML page
