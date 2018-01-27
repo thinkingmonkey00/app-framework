@@ -20,5 +20,3 @@
 ├── config.json          # App Framework configuration file
 └── package.json         # App Framework package information file
 ```
-
-Test files should be saved next to the original file, named with *
