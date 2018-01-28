@@ -1,5 +1,11 @@
+/**
+ * Runs non-interactive child process with callback
+ * @param {(string|string[])} command - The command to run.
+ * @param {function} [callback] - The callback function. Will be called with two arguments {error/null} error and {string/null} data.
+ */
+
 // Import modules
-import cp from 'child_process';
+const cp = require('child_process');
 
 // Create function
 const run = (command, callback) => {
@@ -30,4 +36,4 @@ const run = (command, callback) => {
 };
 
 // Export function
-export default run;
+module.exports = run;

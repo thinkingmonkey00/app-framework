@@ -37,3 +37,20 @@
 - The end user calls scripts to support his workflow, which calls in fact files in the App Framwork module scripts folder
 - The end user configures plugins, which extends the basic Vue app by mixins, located in the App Framework client code folder
 - After App Framework publishes a new version, the end user gets a notification at the dev server and updates App Framwork for each app project
+-
+
+## Scripts
+
+Scripts support the user's workflow.
+
+- All scripts `npm run {script-name}` have a corresponding file *scripts/{script-name}.js*
+- All script files export a default function to enable testing
+- All scripts calls the function with `node -e "require(\'./scripts/{script-name}\')()"`
+- All script files have a corresponding [Jest](https://facebook.github.io/jest/) test file *scripts/specs/{script-name}.spec.js*
+- Helper files could be created as *scripts/helper/{helper-name}.js*
+- Helper files export a default function to enable testing
+- Helper files have a corresponding [Jest](https://facebook.github.io/jest/) test file *scripts/specs/helper/{helper-name}.spec.js*
+- All test files have 100% code coverage
+- All files follow the [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript#airbnb-javascript-style-guide-), but
+  - with hyphen-type file names
+  - with `require/module.exports` instead of `import/export`
