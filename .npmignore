@@ -1,6 +1,7 @@
 .cache/
 .git/
 build/
+coverage/
 node_modules/
 *.log*
 
