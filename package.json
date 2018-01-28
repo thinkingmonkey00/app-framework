@@ -10,14 +10,25 @@
     "npm": ">= 3.0.0"
   },
   "dependencies": {
+    "babel-cli": "^6.26.0",
+    "eslint": "^4.16.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-vue": "^4.2.0",
     "framework7": "^2.0.6",
     "framework7-vue": "^2.0.0",
+    "fs-extra": "^5.0.0",
+    "fs-readdir-recursive": "^1.1.0",
+    "jest": "^22.1.4",
     "parcel-bundler": "github:parcel-bundler/parcel#vue",
     "rimraf": "^2.6.2",
     "vue": "^2.5.13"
   },
   "scripts": {
+    "temp": "node -e 'require(\"./scripts/test/a\")()'",
     "parcel": "cd node_modules/parcel-bundler && npm install && npm install yarn && npm run build && cd ../../",
-    "start": "rimraf build/dist && node_modules/.bin/parcel client/index.html --port 8080 --out-dir build/dev"
+    "start": "rimraf build/dev && node_modules/.bin/parcel client/index.html --out-dir build/dev --port 8080",
+    "test:eslint": "node_modules/.bin/eslint --fix scripts/*.js scripts/**/*.js",
+    "test:jest": "node_modules/.bin/jest --coverage"
   }
 }

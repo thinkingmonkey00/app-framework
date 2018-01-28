@@ -119,5 +119,5 @@
         self.calendar.destroy();
       },
     },
-  };
+  }
 </script>

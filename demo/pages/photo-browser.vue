@@ -68,7 +68,7 @@
             caption: 'Amazing beach in Goa, India',
           },
           'http://placekitten.com/1024/1024',
-          'img/lock.jpg',
+          require('../img/lock.jpg'),
           {
             url: require('../img/monkey.jpg'),
             caption: 'I met this monkey in Chinese mountains',

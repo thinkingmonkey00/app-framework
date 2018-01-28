@@ -1,0 +1,10 @@
+.cache/
+.git/
+build/
+node_modules/
+*.log*
+
+demo/
+docs/
+media/
+README.md

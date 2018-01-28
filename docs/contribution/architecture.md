@@ -17,8 +17,18 @@
 ├── demo/                # App Framework Demo App files
 ├── docs/                # App Framework documentation files
 ├── scripts/             # Scripts for later usage with "npm use ..."
-├── config.json          # App Framework configuration file
+├── .gitignore           # Files to be ignored for Git commits
+├── .npmignore           # Files to be ignored while NPM publishing
 └── package.json         # App Framework package information file
+```
+
+**Automatically created folders and files**
+
+```
+├── .cache/              # Cache folder
+├── .git/                # Git files
+├── build/               # Development and production builds
+└── node_modules/        # Node modules folder
 ```
 
 ## How it works
