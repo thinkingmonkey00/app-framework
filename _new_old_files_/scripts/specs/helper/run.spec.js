@@ -1,4 +1,4 @@
-const run = require('./run');
+const run = require('../../helper/run');
 
 test('should be a function', () => {
   expect(typeof run).toBe('function');
@@ -64,17 +64,17 @@ describe('should callback with two parameters', () => {
       done();
     });
   });
-  test('where data is trimmed on exit code 0', () => {
-     run('npm -v', (err, data) => {
-      expect(data).not.toMatch(/^(\n| )+/);
-      expect(data).not.toMatch(/(\n| )+$/);
+  test('where data is trimmed on exit code 0', (done) => {
+    run('npm -v', (err, data) => {
+      expect(data).not.toMatch(/^(\n| )/);
+      expect(data).not.toMatch(/(\n| )$/);
       done();
     });
   });
-  test('where data is trimmed on exit code 1', () => {
-     run(['node', 'file-does-not-exist'], (err, data) => {
-      expect(data).not.toMatch(/^(\n| )+/);
-      expect(data).not.toMatch(/(\n| )+$/);
+  test('where data is trimmed on exit code 1', (done) => {
+    run(['node', 'file-does-not-exist'], (err, data) => {
+      expect(data).not.toMatch(/^(\n| )/);
+      expect(data).not.toMatch(/(\n| )$/);
       done();
     });
   });

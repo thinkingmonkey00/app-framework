@@ -1,33 +1,31 @@
 /**
- * Run ESLint test and log result to eslint.log file
+ * Run ESLint and log findings
  */
 
 // Import modules
-const cp = require('child_process');
-const fs = require('fs-extra');
+import com from './common';
 
-// Define function
-const eslint = () => {
-  // Run ESLint in sub process and log result to eslint.log file
-  const command = 'node_modules/.bin/eslint scripts';
-  const params = ['--config', 'scripts/helper/config-eslint.js', '>', 'eslint.log', '--fix'];
-  const options = { shell: true, stdio: 'inherit' };
-  const subProcess = cp.spawn(command, params, options);
-  // Act on sub process closure
-  subProcess.on('close', (code) => {
-    // If sub process was closed without error
-    if (code === 0) {
-      // Remove log file
-      fs.remove('eslint.log');
-      // Log success
-      console.log('ESLint test passed without errors');
-    // If sub process was closes with error(s)
-    } else {
-      // Ask user to check eslint.log file
-      console.log('ESLint test found some errors. Please check the file "eslint.log"');
-    }
-  });
+// Define config
+const config = {
+  extends: ['airbnb-base', 'plugin:vue/essential'],
+  env: { node: true, browser: true, jest: true },
 };
 
-// Export function
-module.exports = eslint;
+// Update config.json in temp folder
+const configFile = '.temp/test-eslint/config.json';
+if (!com.writeJson(configFile, config)) com.log.error('Failed to update the ESLint config file');
+
+// Define folders to check
+const folders = [];
+if (!com.isInstalled()) folders.push('scripts');
+
+// Run test
+com.run(['node_modules/.bin/eslint', ...folders, '--config', configFile, '--output-file', 'eslint.log', '--fix', '--max-warnings', 0], (err) => {
+  if (err) {
+    com.log.warning('ESLint found some errors. Please check file "eslint.log" for details.');
+  } else {
+    if (!com.remove('eslint.log')) com.log.warning('Failed to remove the eslint.log file');
+    com.log.success('ESLint check passed without errors.');
+  }
+  if (!com.remove('.temp/test-eslint')) com.log.error('Failed to remove the temp folder');
+});

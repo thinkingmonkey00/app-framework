@@ -1,6 +1,11 @@
-.cache/
+# Exclude Git folder
 .git/
-build/
-coverage/
+
+# Exclude temporary files
+.temp/
+
+# Exclude Node modules
 node_modules/
+
+# Exclude log files
 *.log*

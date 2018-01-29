@@ -11,22 +11,15 @@
   },
   "dependencies": {
     "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "chalk": "^2.3.0",
     "eslint": "^4.16.0",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.8.0",
-    "eslint-plugin-vue": "^4.2.0",
-    "framework7": "^2.0.6",
-    "framework7-vue": "^2.0.0",
-    "fs-extra": "^5.0.0",
-    "fs-readdir-recursive": "^1.1.0",
-    "jest": "^22.1.4",
-    "parcel-bundler": "github:parcel-bundler/parcel#vue",
-    "rimraf": "^2.6.2",
-    "run-func": "^1.0.2",
-    "vue": "^2.5.13"
+    "eslint-plugin-vue": "^4.2.2",
+    "fs-extra": "^5.0.0"
   },
   "scripts": {
-    "test-eslint": "node -e 'require(\"./scripts/test-eslint\")()'",
-    "test-jest": "node -e 'require(\"./scripts/test-jest\")()'"
+    "test-eslint": "node_modules/.bin/babel-node scripts/test-eslint"
   }
 }

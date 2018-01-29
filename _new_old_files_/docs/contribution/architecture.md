@@ -46,9 +46,10 @@ Scripts support the user's workflow.
 - All scripts `npm run {script-name}` have a corresponding file *scripts/{script-name}.js*
 - All script files export a default function to enable testing
 - All scripts calls the function with `node -e "require(\'./scripts/{script-name}\')()"`
+  - This could be done automatically with `npm run update-scripts`
 - All script files have a corresponding [Jest](https://facebook.github.io/jest/) test file *scripts/specs/{script-name}.spec.js*
 - Helper files could be created as *scripts/helper/{helper-name}.js*
-- Helper files export a default function to enable testing
+- Helper files export a default function or object to enable testing
 - Helper files have a corresponding [Jest](https://facebook.github.io/jest/) test file *scripts/specs/helper/{helper-name}.spec.js*
 - All test files have 100% code coverage
 - All files follow the [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript#airbnb-javascript-style-guide-), but
