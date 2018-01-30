@@ -1,37 +1,47 @@
-/**
- * Run ESLint and log findings
- */
+// Runs ESLint code check and logs findings
 
 // Import modules
-import com from './common';
+import h from './helper';
 
 // Define config
 const config = {
   extends: ['airbnb-base', 'plugin:vue/essential'],
   env: { node: true, browser: true, jest: true },
+  plugins: ['markdown'],
 };
 
-// Update config.json in temp folder
-const configFile = '.temp/test-eslint/config.json';
-if (!com.writeJson(configFile, config)) com.log.error('Failed to update the ESLint config file');
+// Create config file in cache folder
+const configFile = 'cache/test-eslint/config.json';
+h.write(configFile, config);
 
 // Define folders to check
 const folders = [];
-if (!com.isInstalled()) folders.push('scripts');
+if (!h.isInstalled()) folders.push('docs', 'client', 'scripts');
+if (h.isInstalled()) folders.push('app');
+
+// Define commands
+const commands = [
+  'node_modules/.bin/eslint', ...folders,
+  '--config', configFile,
+  '--output-file', 'eslint.log',
+  '--fix',
+  '--max-warnings', 0,
+  '--ext', '.js,.vue,.md',
+];
 
 // Run test
-com.run(['node_modules/.bin/eslint', ...folders, '--config', configFile, '--output-file', 'eslint.log', '--fix', '--max-warnings', 0], (err) => {
+h.run(commands, (err) => {
   // If errors
   if (err) {
     // Log warning
-    com.log.warning('ESLint found some errors. Please check file "eslint.log" for details.');
+    h.log.warning('ESLint found some errors. Please check file "eslint.log" for details.');
   // If no errors
   } else {
     // Remove eslint.log file
-    if (!com.remove('eslint.log')) com.log.warning('Failed to remove the eslint.log file');
+    h.remove('eslint.log');
     // Log success
-    com.log.success('ESLint check passed without errors.');
+    h.log.success('ESLint check passed without errors.');
   }
   // Remove temp folder
-  if (!com.remove('.temp/test-eslint')) com.log.error('Failed to remove the temp folder');
+  h.remove('cache/test-eslint');
 });

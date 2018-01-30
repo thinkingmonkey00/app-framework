@@ -9,10 +9,7 @@
 - List items end without a point
 - User inputs are formatted as `code`
 - Folder and file names are formatted *italic*
-
-### Files
-
-- File naming follows [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
+- JavaScript code is enclosed with ` ```js ... ``` `
 
 ### Code
 
@@ -39,4 +36,4 @@
   - To get an absolute path, relative to the project folder, with `com.path(text)`
   - To write JSON to a file with `com.writeJson(file, json)`
   - To remove folder or files with `com.remove(path)`
-- Scripts can use a sub folder in the *.temp* folder for temporary data (e.g. *.temp/test-eslint/...*)
+- Scripts can use a sub folder in the *cache* folder for temporary data (e.g. *.temp/test-eslint/...*)

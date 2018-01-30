@@ -1,8 +1,8 @@
 # Exclude Git folder
 .git/
 
-# Exclude temporary files
-.temp/
+# Exclude cache folder
+cache/
 
 # Exclude Node modules
 node_modules/

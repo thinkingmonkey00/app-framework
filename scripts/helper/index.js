@@ -1,19 +1,23 @@
-import copy from './copy';
+// Returns all functions in helper folder as object
+
+// Import modules
 import isInstalled from './isInstalled';
 import log from './log';
-import move from './move';
 import path from './path';
+import read from './read';
 import remove from './remove';
 import run from './run';
-import writeJson from './writeJson';
+import type from './type';
+import write from './write';
 
+// Export object
 export default {
-  copy,
   isInstalled,
   log,
-  move,
   path,
+  read,
   remove,
   run,
-  writeJson,
+  type,
+  write,
 };
