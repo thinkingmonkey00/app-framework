@@ -10,17 +10,17 @@
 
 **Core**
 
-- [x] **Beautiful User Interface** with native iOS and Material Design elements and transitions, based on [Framework7](https://framework7.io/)
+- [ ] **Beautiful User Interface** with native iOS and Material Design elements and transitions, based on [Framework7](https://framework7.io/)
 - [ ] **Comprehensive Icon Fonts** like [FontAwesome](http://fontawesome.io/), [Framework7 Icons](http://framework7.io/icons/), [Ion](http://ionicons.com/) and [Material Design Icons](https://material.io/icons/) out of the box
-- [x] **Flexible Routing** for pages, tabs, modals and panels with dynamic routing support, realized with [Framework7-Vue](https://framework7.io/vue/navigation-router.html)
+- [ ] **Flexible Routing** for pages, tabs, modals and panels with dynamic routing support, realized with [Framework7-Vue](https://framework7.io/vue/navigation-router.html)
 - [ ] **Multi-language Support** with language files and automatic completeness checks according the default language
 - [ ] **One Code Base** for all devices with HTML, CSS and JavaScript, realized with [Cordova](https://cordova.apache.org/), supporting [ES2015](https://babeljs.io/learn-es2015/)
-- [x] **Single File Components** for powerful but easy to maintain apps, made with [Vue.js](https://vuejs.org/) and [Framework7-Vue](http://framework7.io/vue/)
+- [ ] **Single File Components** for powerful but easy to maintain apps, made with [Vue.js](https://vuejs.org/) and [Framework7-Vue](http://framework7.io/vue/)
 - [ ] **Project Folder Creation**, lightweight and well-organized, ready to publish on [GitHub](https://github.com/about)
 
 **Scripts**
 
-- [x] **Live Development Server** with hot module replacement, powered by [Parcel](https://parceljs.org/)
+- [ ] **Live Development Server** with hot module replacement, powered by [Parcel](https://parceljs.org/)
 - [ ] **Test on your own Device** or in any iOS or Android emulator, supported by [Cordova](https://cordova.apache.org/), [Xcode](https://developer.apple.com/xcode/) and [Android Studio](https://developer.android.com/studio)
 - [ ] **Test Framework** for code correctness and standard conformity with [ESLint](http://eslint.org/) and for unit tests with [Jest](https://facebook.github.io/jest/)
 - [ ] **Optimized Build Process** for good scores at [Google Lighthouse](https://developers.google.com/web/tools/lighthouse/) or [YSlow](http://yslow.org/), realized with [Parcel](https://parceljs.org/)
@@ -71,5 +71,5 @@
 
 **Guidelines** for the contributors
 
-- [ ] [Architecture](docs/contribution/architecture.md)
+- [ ] Architecture
 - [ ] Workflow
