@@ -1,6 +1,7 @@
 // Returns all functions in helper folder as object
 
 // Import modules
+import exists from './exists';
 import isInstalled from './isInstalled';
 import log from './log';
 import path from './path';
@@ -12,6 +13,7 @@ import write from './write';
 
 // Export object
 export default {
+  exists,
   isInstalled,
   log,
   path,

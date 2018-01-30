@@ -17,12 +17,14 @@ export default (...args) => {
   const subProcess = cp.spawn(commands.shift(), commands, options);
   // Remember data
   const allData = [];
-  subProcess.stdout.on('data', (data) => {
-    allData.push(data.toString());
-  });
-  subProcess.stderr.on('data', (data) => {
-    allData.push(data.toString());
-  });
+  if (!interactive) {
+    subProcess.stdout.on('data', (data) => {
+      allData.push(data.toString());
+    });
+    subProcess.stderr.on('data', (data) => {
+      allData.push(data.toString());
+    });
+  }
   // On sub process closure
   subProcess.on('close', (code) => {
     // Trim data

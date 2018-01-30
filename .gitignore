@@ -12,3 +12,6 @@ node_modules/
 
 # Exclude package lock file
 package-lock.json
+
+# Exclude app folder
+app/

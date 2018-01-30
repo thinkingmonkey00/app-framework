@@ -18,9 +18,14 @@
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-markdown": "^1.0.0-beta.6",
     "eslint-plugin-vue": "^4.2.2",
-    "fs-extra": "^5.0.0"
+    "fs-extra": "^5.0.0",
+    "lodash": "^4.17.4",
+    "semver": "^5.5.0"
   },
   "scripts": {
-    "test-eslint": "node_modules/.bin/babel-node scripts/test-eslint"
+    "test": "node_modules/.bin/babel-node scripts/test",
+    "test-engines": "node_modules/.bin/babel-node scripts/test-engines",
+    "test-eslint": "node_modules/.bin/babel-node scripts/test-eslint",
+    "reset-app": "node_modules/.bin/babel-node scripts/reset-app"
   }
 }

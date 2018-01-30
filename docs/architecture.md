@@ -19,7 +19,7 @@
 
 ... some hints ...
 
-- .babelrc - needed by ESLint
+- .babelrc - needed by ESLint, Jest
 
 ## Scripts
 
