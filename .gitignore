@@ -2,6 +2,7 @@
 .git/
 
 # Exclude cache folder
+.cache/
 cache/
 
 # Exclude Node modules
