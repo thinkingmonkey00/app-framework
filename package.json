@@ -21,6 +21,8 @@
     "framework7": "^2.0.7",
     "framework7-vue": "^2.0.7",
     "fs-extra": "^5.0.0",
+    "parcel-bundler": "^1.5.1",
+    "parcel-plugin-vue": "^1.5.0",
     "semver": "^5.5.0",
     "vue": "^2.5.13"
   },
@@ -29,6 +31,6 @@
     "test-engines": "node_modules/.bin/babel-node scripts/test-engines",
     "test-eslint": "node_modules/.bin/babel-node scripts/test-eslint",
     "reset-app": "node_modules/.bin/babel-node scripts/reset-app",
-    "parcel": "rimraf cache/parcel && node_modules/.bin/parcel client/index.html --public-url ./  --out-dir cache/parcel"
+    "tmp-parcel": "rimraf cache/parcel && node_modules/.bin/parcel client/index.html --out-dir cache/parcel"
   }
 }

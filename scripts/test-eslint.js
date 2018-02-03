@@ -15,9 +15,8 @@ const configFile = 'cache/test-eslint/config.json';
 h.write(configFile, config);
 
 // Define folders to check
-const folders = [];
+const folders = ['app'];
 if (!h.isInstalled()) folders.push('docs', 'client', 'scripts');
-if (h.isInstalled()) folders.push('app');
 
 // Define commands
 const commands = [
